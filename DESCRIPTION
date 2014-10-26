@@ -1,0 +1,14 @@
+Package: stanhelpers
+Type: Package
+Title: Helper functions for working with Stan
+Version: 0.0.1
+Date: 2014-10-24
+Author: Sean C. Anderson
+Maintainer: Sean C. Anderson <sean_anderson@sfu.ca>
+Description: Helper functions for working with Stan
+License: GPL-3
+Depends:
+    R (>= 3.1.0)
+Imports:
+    parallel,
+    rstan (>= 2.5.0)
