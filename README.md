@@ -5,7 +5,7 @@ Stan and rstan easier to do.
 
 Right now there is only one function: `sampling_parallel()`. This function makes it easy to sample from Stan models in parallel. The [rstan wiki](https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#sample-multiple-chains-in-parallel) explains how to sample in parallel, but this takes a lot of extra code. I want it to be as easy to sample in parallel as it is to call the default funtions. So, instead of writing the following for every model:
 
-```S
+```R
 library(parallel)
 sflist <- 
 mclapply(1:4, mc.cores = 2, 
@@ -16,7 +16,7 @@ fit <- sflist2stanfit(sflist)
 
 I can just write:
 
-```S
+```R
 fit <- sampling_parallel(foo, foo_data, chains = 4L)
 ```
 
@@ -25,7 +25,7 @@ and making them quick to visualize.
 
 Install the package with:
 
-```S
+```R
 # install.packages("devtools")
 devtools::install_github("seananderson/stanhelpers")
 ```
