@@ -25,7 +25,7 @@
 #' @references https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' schools_code <- "data {
 #'   int<lower=0> J; // number of schools
 #'   real y[J]; // estimated treatment effects
