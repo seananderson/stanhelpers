@@ -1,7 +1,5 @@
 ## stanhelpers
 
-[![Travis-CI Build Status](https://travis-ci.org/seananderson/stanhelpers.png?branch=master)](https://travis-ci.org/seananderson/stanhelpers)
-
 stanhelpers is a small collection of functions to make things that I do with
 [Stan](http:://mc-stan.org/) and [rstan](http:://mc-stan.org/rstan.html) easier. The package is a work in progress as I discover and solve bottlenecks.
 
