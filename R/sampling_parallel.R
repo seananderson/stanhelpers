@@ -21,7 +21,7 @@
 #'   single model object.
 #'
 #' @importFrom parallel mclapply
-#' @importFrom rstan sflist2stanfit stan
+#' @importFrom rstan sflist2stanfit stan sampling
 #' @references https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started
 #'
 #' @examples
