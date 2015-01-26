@@ -61,6 +61,12 @@ sampling_parallel <- function(object, data, chains = 4L, cores = 2L,
 
   if(is.null(rng_seed)) rng_seed <- sample(seq_len(1e5), 1L)
 
+  if(.Platform$OS.type != "unix") {
+    warning(paste("mclapply parallel processing is not available on Windows,",
+                  "switching number of cores to 1."))
+    cores = 1L
+  }
+
   sflist <- mclapply(seq_len(chains), mc.cores = cores,
       function(i) sampling(object = object, data = data,
         seed = rng_seed, chains = 1L, chain_id = i,
