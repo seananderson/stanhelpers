@@ -24,7 +24,7 @@ These formats should be easier to use with packages such as dplyr, tidyr, or ggp
 
 ### `sampling_parallel()`
 
-**This is now built into rstan. You should use `options(mc.cores = parallel::detectCores())` instead.**
+**This is now built into rstan. You should use `options(mc.cores = parallel::detectCores())` or, e.g., `stan(..., cores = 4)` instead.**
 
 This function makes it easy to sample from Stan models in parallel (on OS X or Linux). The [rstan wiki](https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#sample-multiple-chains-in-parallel) explains how to sample in parallel, but this takes a lot of extra code. I want it to be as easy to sample in parallel as it is to call the default functions. So, instead of writing the following for every model:
 
